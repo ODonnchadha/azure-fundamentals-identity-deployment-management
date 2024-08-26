@@ -1,2 +1,70 @@
-# azure-fundamentals-identity-deployment-management
-Culled from a Pluralsight class entitled "Microsoft Azure Fundamentals (AZ-900): Identity, Deployment, and Management" by Mike Boorman
+## Microsoft Azure Fundamentals (AZ-900): Identity, Deployment, and Management
+- By Mike Boorman
+
+- INTRODUCTION:
+  - Azure AD. Now Microsoft Entra ID. 
+  - Azure resources, including Azure Resource Manager.
+  - Permissions and roles.
+  - Why are we here? The exam.
+
+- AZURE IDENTITY, AUTHENTICATION, AND AUTHORIZATION:
+  - The three:
+    - Identity: Who, or what, a person or object claims to be.
+      - Passport. DL. Azure Active Directory object. Software license.
+      - "The unique identifier for any digital object."
+    - Authentication: The process of validating an identity. The proof.
+      - House key. SSH key. SSL certificate. Email account password.
+      - "Proves the identity."
+    - Authorization: The process of validating what an identity *can* do.
+      - An event ticket. Key code. Application secret. SAS token. (Shared access signature.)
+      - "Scopes the identity."
+  - Azure Active Directory: 
+    - Service for managing identity, authentication, and authorization.
+    - Applied to Azure and third-party services, etc.  Rebranded Microsoft Entra ID.
+    - Modern architecture, protocols, and methods. Cloud-native design.
+    - Microsoft Entra: 
+      - Azure Active Directory: Part of the new (broader) Microsoft Entra (product) family.
+      - Permissions Management:
+      - Verified ID:
+    - AD: Legacy office solution. Lagacy Web. Legacy Authentication.
+      - Requirements: Automatic/mandatory. Minimum one user.
+    - Tenant: Organization. Dedicated Azure AD. Separate. No cross-over or connection.
+      - A user can be a member or guest of up to 500 tenants.
+      - "A tenant is a dedicated instance of Azure AD/Entra ID."
+      - "It represents your organization in Azure."
+    - Subscription. Billing entity. Cost separation. Payment.
+  - Zero trust model: Classic trusted versus untrusted model.
+    - Trusted perimeter. Corporate devices.
+      - Must be on the corporate network to access resources.
+        - VPN is extension of trusted perimeter. Mobile devices are even more challenging.
+        - Broad scope of access.
+      - Zero trust. All users are assumed untrustworthy unless proven otherwise.
+        - Trusted by identity. Regardless of location. 
+        - Least privilege access. Simplified, central management.
+        - Zero trust = trusted identities, not location.
+          - Pushed trust to the individual level.
+  - Multi-factor Authentication:
+    - Layered security
+    - MFA Model: 
+      - First factor: Something you know. Second factor: Something you have.
+      - Included: something you are.
+  - Conditional access:
+    - Authentication that protections beyond username/password.
+      - If/then: if user meets conditions, then...
+      - Assign signals (conditions):
+        - Users/groups.
+        - Application to grant/deny access.
+        - Location (IP.)
+        - Approved devices.
+    - Scenarios:
+      - Enforce MFA for all administrators and users.
+      - Block legacy authentication.
+      - Grant access only to specific locations.
+      - Require organization-managed devices for application sign-in.
+  - Password-less authentication:
+    - Security versus convenience. MFA is more secure, but less convenient.
+
+
+- MANAGEMENT AND DEPLOYMENT TOOLS:
+
+- CONCLUSION:
